@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Record </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pri: {
+                500: "#da373d",
+              },
+              sec: {
+                100:"#f1f1f1",
+                200:"#ccc",
+                300:"#777",
+                400:"#333",
+                800:"#211F1D"
+              },
+              white:"#fff",
+              green:"#3FDBA9",
+              blue:"#385CC4",
+              yellow:"#FFB13C",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .text-custom {
+        font-size: 0.7rem; 
+      }
+      .text-tiny {
+        font-size: 0.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex h-full">
+        <div class="w-1/4 sm:w-2/5 bg-white p-4 text-black font-small rounded-md">
+        <img src="Bit Medics Logo.png" class="w-3/4" alt="">
+      <div class="bg-[#F5F5F5] rounded-lg w-3/4 mt-3 ">
+  
+        <div class="flex flex-col justify-between" style="height: calc(100vh - 100px);">
+          <div>
+            <div class="flex items-center gap-2 p-2 mt-6 mx-4 cursor-pointer rounded-md">
+              <i class="ri-first-aid-kit-line text-xs text-[#ACACAB]"></i> <p>General Test</p>
+            </div>
+            <div class="flex items-center gap-2 p-2 mx-4 mt-2  cursor-pointer rounded-md bg-[#FC724D]">
+              <i class="ri-user-3-fill text-xs text-[#26335D]"></i> <p>Profile</p>
+            </div>
+
+            <div class="flex items-center gap-2 p-2 mt-2 mx-4  cursor-pointer rounded-md">
+              <i class="ri-book-3-line text-xs text-[#ACACAB]"></i> <p>Health record</p>
+            </div>
+
+            <div class="flex items-center gap-2 p-2 mt-2 mx-4  cursor-pointer rounded-md">
+              <i class="ri-notification-3-line text-xs text-[#ACACAB]"></i> <p>Reminders</p>
+            </div>
+            
+               
+          </div>
+          <div >
+            <div class="flex items-center gap-2 p-2  cursor-pointer rounded-md bottom-0 right-0">
+              <i class="ri-logout-box-line text-xs text-[#ACACAB]"></i> <p>Logout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+
+        <div class="w-3/4 sm:w-4/5 bg-white">
+        <div class="p-4 flex items-center justify-between bg-white mt">
+          <div class="flex items-center gap-3">
+            <div>
+              <div class="flex items-center gap-12 border border-black w-56 mt-6 rounded-xl -ml-16 "><input class="text-xs ml-2 " placeholder="Quick Search here"/>
+                <i class="ri-search-line text-g text-black"></i>
+                <img src="profile.png" class="rounded-full w-8 h-8 absolute right-10">
+              </div>
+              <div class="flex items-center gap-4 -ml-16 mt-4">
+                <div class="flex items-center gap-4">
+                <img src="profile2.png" class="w-16 h-16">
+                <div class="text-xs">
+                  <h4 class="font-bold text-[#26335D]">Zubaidat Ahmed</h4>
+                  <ul class="mt-1 text-custom">
+                    <li>Age: 36</li>
+                    <li>Email: shukazy@gmail.com</li>
+                    <li>Phone: 08168772</li>
+                  </ul>
+                </div>
+              </div>
+
+                <div class="flex items-center gap-4 ml-16">
+
+                <div class="flex flex-col items-center text-center">
+
+                  <div class="relative w-20 h-20 bg-[#DBB0B0] rounded-md p-2 flex items-center justify-center">
+                    <div class="relative w-2/3 h-2/3 bg-gray-300 rounded-full bottom-3">
+                      <img src="bar.png" alt="Image 1" class="absolute object-cover rounded-full z-10">
+                      <div class="absolute inset-0 rounded-full bg-[#EBD797]"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-gray-700 font-bold text-sm">75%</div>
+                      <p class="absolute top-11 left-1/2 transform -translate-x-1/2 text-tiny">110/120</p>
+                      <p class="absolute top-12 left-1/2 transform -translate-x-1/2 text-custom">sugar</p>
+                  </div>  
+                </div>
+                
+              </div>
+              
+              
+              <div class="relative w-20 h-20 bg-[#D3F4FB] rounded-md p-2 flex items-center justify-center">
+                <div class="relative w-2/3 h-2/3 bg-gray-300 rounded-full bottom-3">
+                  <img src="bar.png" alt="Image 1" class="absolute object-cover rounded-full z-10">
+                  <div class="absolute inset-0 rounded-full bg-[#EBD797]"></div>
+                  <div class="absolute inset-0 flex items-center justify-center text-gray-700 font-bold text-sm">75%</div>
+                  <p class="absolute top-11 left-1/2 transform -translate-x-1/2 text-tiny">81/72</p>
+                  <p class="absolute top-12 left-1/2 transform -translate-x-1/2 text-custom">sugar</p>
+              </div>  
+            </div>
+              
+             <div class="relative w-20 h-20 bg-[#F0C3FF] rounded-md p-2 flex items-center justify-center">
+                    <div class="relative w-2/3 h-2/3 bg-gray-300 rounded-full bottom-3">
+                      <img src="bar.png" alt="Image 1" class="absolute object-cover rounded-full z-10">
+                      <div class="absolute inset-0 rounded-full bg-[#EBD797]"></div>
+                      <div class="absolute inset-0 flex items-center justify-center text-gray-700 font-bold text-sm">75%</div>
+                      <p class="absolute top-11 left-1/2 transform -translate-x-1/2 text-tiny">118/90</p>
+                      <p class="absolute top-12 left-1/2 transform -translate-x-1/2 text-custom">Blood Pressure</p>
+                  </div>  
+                </div>
+
+            </div>
+          </div>
+          
+          <div class="flex mt-4 justify-between -ml-16 space-x-2">
+            <button class="flex-grow bg-[#F5F5F5] hover:bg-[#ACACAB] text-[#26335D] py-2 px-2 rounded text-custom">
+                Medical History
+            </button>
+            <button class="flex-grow bg-[#F5F5F5] hover:bg-[#ACACAB] text-[#26335D] py-2 px-2 rounded text-custom">
+                Lab Result
+            </button>
+            <button class="flex-grow bg-[#FEB4A1] hover:bg-[#ACACAB] text-[#26335D] py-2 px-2 rounded text-custom">
+                Assigned Doctors
+            </button>
+            <button class="flex-grow bg-[#F5F5F5] hover:bg-[#ACACAB] text-[#26335D] py-2 px-2 rounded text-custom">
+                Prescription
+            </button>
+        </div>
+        
+        
+            
+        
+
+              </div>
+  
+            </div>
+          </div>
+     
+        </div>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
